@@ -1,5 +1,5 @@
 const countdown = () => {
-    const countDate = new Date("August 21, 2023 00:00:00").getTime();
+    const countDate = new Date("December 4, 2023 00:00:00").getTime();
 
     const now = new Date().getTime();
     const gap = countDate - now
@@ -19,12 +19,20 @@ const countdown = () => {
 
 
 
-    console.log(textSecond)
+    // console.log(textSecond)
 
     document.querySelector('.day').innerHTML = textDay;
     document.querySelector('.hour').innerHTML = textHour;
     document.querySelector('.minute').innerHTML = textMinute;
     document.querySelector('.seconds').innerHTML = textSecond;
+    const countdown= document.querySelector('.countdown')
+
+     if (gap < 0) {
+      clearInterval(countdown);
+      countdown.innerHTML = `<h4 class="expired">Omo exams don end, see you next semester!!!</h4>`;
+    }
 }
 
 setInterval(countdown, 1000)
+
+

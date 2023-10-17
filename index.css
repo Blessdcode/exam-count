@@ -71,7 +71,7 @@ Global Styles
 
 body {
     font-family: var(--ff-secondary);
-    background: var(--clr-grey-10);
+    background: var(--);
     color: var(--clr-grey-1);
     line-height: 1.5;
     font-size: 0.875rem;
@@ -102,6 +102,8 @@ h4 {
     line-height: 1.25;
     margin-bottom: 0.75rem;
     font-family: var(--ff-primary);
+    margin: 1.4rem 0;
+
 }
 
 h1 {
@@ -244,7 +246,7 @@ Countdown Timer
     color: var(--clr-white);
     margin-right: 1rem;
     width: 6rem;
-    height: 6rem;
+    height: 7rem;
     /* display: grid;
     place-items: center;
     text-align: center; */
@@ -252,6 +254,8 @@ Countdown Timer
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .container-day span {
@@ -267,7 +271,7 @@ Countdown Timer
     letter-spacing: var(--spacing);
 }
 
-.container-day h3{
+.container-day h3 {
     color: white;
     font-size: 1.87rem;
 }
